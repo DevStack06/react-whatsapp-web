@@ -15,6 +15,11 @@ export default function Homepage() {
         <LeftPanel />
       </Box>
       <Box
+        sx={{
+          border: ".05px solid #2f3b44",
+        }}
+      />
+      <Box
         width="70%"
         sx={{
           background: "yellow",
