@@ -6,27 +6,13 @@ import RightPanel from "./RightPanel";
 export default function Homepage() {
   return (
     <Box display="flex" flexDirection="row" height="100vh">
-      <Box
-        width="30%"
-        sx={{
-          background: "red",
-        }}
-      >
-        <LeftPanel />
-      </Box>
+      <LeftPanel />
       <Box
         sx={{
           border: ".05px solid #2f3b44",
         }}
       />
-      <Box
-        width="70%"
-        sx={{
-          background: "yellow",
-        }}
-      >
-        <RightPanel />
-      </Box>
+      <RightPanel />
     </Box>
   );
 }
