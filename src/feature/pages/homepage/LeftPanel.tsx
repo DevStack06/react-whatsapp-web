@@ -11,7 +11,7 @@ import { ChatCardType } from "./utils/LeftPanel.types";
 
 const localChats: ChatCardType[] = [
   {
-    name: "Balram Rathore",
+    name: "Balram",
     lastText: "Hey there testing whatsapp",
     lastSeen: "4:21 PM",
     selected: true,
@@ -30,25 +30,25 @@ const localChats: ChatCardType[] = [
   },
   {
     name: "Test 2",
-    lastText: "Testing okk how test test 123",
+    lastText: "Testing Yes",
     lastSeen: "4:21 PM",
     selected: false,
   },
   {
-    name: "Balram Rathore",
-    lastText: "Hey there testing whatsapp",
+    name: "Test 3",
+    lastText: "Ok Tested",
     lastSeen: "4:21 PM",
     selected: false,
   },
   {
-    name: "Dev Stack",
-    lastText: "DevStack testing whatsapp",
+    name: "Test 4",
+    lastText: "Yes",
     lastSeen: "8:51 PM",
     selected: false,
   },
   {
-    name: "Test 1",
-    lastText: "Testing okk how test test 123",
+    name: "HDFC",
+    lastText: "Take a lone",
     lastSeen: "4:21 PM",
     selected: false,
   },
