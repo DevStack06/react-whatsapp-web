@@ -1,13 +1,19 @@
 import { Avatar, Box, Typography } from "@mui/material";
 import React from "react";
+import { ChatCardType } from "../../feature/pages/homepage/utils/LeftPanel.types";
 
-export default function ChatCard() {
+interface ChatCardProps {
+  item: ChatCardType;
+}
+
+export default function ChatCard({ item }: ChatCardProps) {
+  const { name, lastSeen, lastText, selected } = item;
   return (
     <Box
       display="flex"
       sx={{
-        background: "#101b20",
-        padding: "12px 12px",
+        background: selected ? "#2b3943" : "#101b20",
+        padding: "8px 12px",
       }}
     >
       <Avatar />
@@ -20,15 +26,22 @@ export default function ChatCard() {
       >
         <Box display="flex" justifyContent="space-between" width="100%">
           <Typography variant="body1" color="#d1d7db">
-            Balram 1
+            {name}
           </Typography>
           <Typography variant="caption" color="#d1d7db">
-            4:21 PM
+            {lastSeen}
           </Typography>
         </Box>
         <Typography variant="subtitle2" color="#d1d7db">
-          Let me check ok 12 3 4kjbj hg u guy
+          {lastText}
         </Typography>
+        <Box
+          width="100%"
+          mt="13px"
+          sx={{
+            border: ".05px solid #2f3b44",
+          }}
+        />
       </Box>
     </Box>
   );
