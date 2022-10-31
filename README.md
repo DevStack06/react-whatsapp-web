@@ -16,7 +16,7 @@ Tutorial Link: [Click here](https://youtube.com/playlist?list=PLtIU0BH0pkKp2Zu9x
 
 #### 2. With menu modal
 
-![App Screenshot 2](https://github.com/DevStack06/images/blob/7b9250dbd86486c35bf13c97b9f70d6624f64844/Screenshot%202022-10-31%20at%2010.58.37%20AM.png)
+![App Screenshot 2](https://github.com/DevStack06/images/blob/master/Screenshot%202022-10-31%20at%2010.58.45%20AM.png)
 
 ## Run Locally
 
