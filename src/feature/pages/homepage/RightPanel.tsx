@@ -7,6 +7,7 @@ import bg from "../../../assets/background.png";
 import MoodIcon from "@mui/icons-material/Mood";
 import AttachFileIcon from "@mui/icons-material/AttachFile";
 import MicIcon from "@mui/icons-material/Mic";
+import ChatContainer from "./ChatContainer";
 
 export default function RightPanel() {
   const globalIconStyle = {
@@ -52,7 +53,7 @@ export default function RightPanel() {
           </Box>
         </Box>
       </CustomAppBar>
-      <Box height="85.2%">
+      <Box height="85.2%" position="relative">
         <Box
           height="100%"
           width="100%"
@@ -60,11 +61,13 @@ export default function RightPanel() {
           src={bg}
           alt="background"
         />
+        <ChatContainer />
       </Box>
       <Box
         height="62px"
         alignItems="center"
         display="flex"
+        zIndex="1000"
         sx={{
           background: "#1f2c33",
           padding: "0px 15px",
