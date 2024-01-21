@@ -5,9 +5,9 @@ import CustomMenuButton from "../../../foundation/CustomMenuButton/CustomMenuBut
 import { rightPanelMenuItem } from "./utils/constant";
 import bg from "../../../assets/background.png";
 import MoodIcon from "@mui/icons-material/Mood";
-import AttachFileIcon from "@mui/icons-material/AttachFile";
 import MicIcon from "@mui/icons-material/Mic";
 import ChatContainer from "./ChatContainer";
+import AttachmentPopover from "./AttachmentPopover";
 
 export default function RightPanel() {
   const globalIconStyle = {
@@ -76,14 +76,7 @@ export default function RightPanel() {
         <IconButton onClick={() => {}}>
           <MoodIcon sx={globalIconStyle} />
         </IconButton>
-        <IconButton onClick={() => {}}>
-          <AttachFileIcon
-            sx={{
-              ...globalIconStyle,
-              transform: "rotateY(0deg) rotate(45deg)",
-            }}
-          />
-        </IconButton>
+        <AttachmentPopover />
         <Box flex={1} pl="5px" pr="5px">
           <Input
             fullWidth
